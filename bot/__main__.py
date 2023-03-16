@@ -91,17 +91,18 @@ def stats(update, context):
                     f'🔻 Download Data: {recv}\n\n'
 
     else:
-            stats = f'<b>    📊 Bot Statistics </b>\n' \
-                    f'Updated On: {last_commit}\n'\
-                    f'Uptime: {currentTime}\n'\
-                    f'Version: {version}\n'\
-                    f'OS Uptime: {osUptime}\n'\
-                    f'CPU: [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
-                    f'RAM: [{progress_bar(mem_p)}] {mem_p}%\n'\
-                    f'Disk: [{progress_bar(disk)}] {disk}%\n'\
-                    f'Disk Free: {free}\n'\
-                    f'Upload Data: {sent}\n'\
-                    f'Download Data: {recv}\n\n'
+            stats = f'<b>╭─《 ʙᴏᴛ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ 》</b>\n' \
+                    f'<b>├ ᴜᴘᴅᴀᴛᴇᴅ ᴏɴ: </b>{last_commit}\n'\
+                    f'<b>├ ᴜᴘᴛɪᴍᴇ: </b>{currentTime}\n'\
+                    f'<b>├ ᴏꜱ ᴜᴘᴛɪᴍᴇ: </b>{osUptime}\n'\
+                    f'<b>├ ᴄᴘᴜ:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
+                    f'<b>├ ʀᴀᴍ:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
+                    f'<b>├ ᴅɪꜱᴋ:</b> [{progress_bar(disk)}] {disk}%\n'\
+                    f'<b>├ ᴅɪꜱᴋ ᴛᴏᴛᴀʟ:</b> {total}\n'\
+                    f'<b>├ ᴅɪꜱᴋ ꜰʀᴇᴇ:</b> {free}\n'\
+                    f'<b>├ ᴛᴏᴛᴀʟ ᴍᴇᴍᴏʀʏ:</b> {mem_t}\n'\
+                    f'<b>├ ᴜᴘʟᴏᴀᴅ ᴅᴀᴛᴀ:</b> {sent}\n'\
+                    f'<b>╰ ᴅᴏᴡɴʟᴏᴀᴅ ᴅᴀᴛᴀ:</b> {recv}\n\n'
 
 
 
