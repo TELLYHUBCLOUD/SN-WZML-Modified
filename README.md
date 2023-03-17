@@ -22,6 +22,8 @@ Deployment Method :-
 6. If you see Info - Bot Sarted !!! Message in your heroku logs it means bot successfully deployed.
 
 
+Don't set EMOJI_THEME var to true. My edits won't work then.
+
 
 NOTE - I am just changing some string values which won't give any errors during the working of the mirror bot. So, if u face any error regarding this please contact the support group of the original repo or you can contact me via Telegram (id is below).
 
