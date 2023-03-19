@@ -309,7 +309,7 @@ class MirrorLeechListener:
                 if config_dict['EMOJI_THEME']:
                     warnmsg = f'<b>❗ This message will be deleted in <i>{auto_delete_message} minutes</i> from this group.</b>\n'
                 else:
-                    warnmsg = f'<b>This message will be deleted in <i>{auto_delete_message} minutes</i> from this group.</b>\n'
+                    warnmsg = f'<b>ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <i>{auto_delete_message} ᴍɪɴᴜᴛᴇꜱ</i> ꜰʀᴏᴍ ᴛʜɪꜱ ɢʀᴏᴜᴘ.</b>\n'
         else:
             warnmsg = ''
         if BOT_PM_X and self.message.chat.type != 'private':
@@ -348,7 +348,7 @@ class MirrorLeechListener:
         if config_dict['EMOJI_THEME']:
             msg = f"<b>🗂️ Name: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n<b>📐 Size: </b>{size}"
         else:
-            msg = f"<b>ɴᴀᴍᴇ: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n<b>Size: </b>{size}"
+            msg = f"<b>ɴᴀᴍᴇ: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n<b>ꜱɪᴢᴇ: </b>{size}"
 
         if self.isLeech:
             if config_dict['SOURCE_LINK']:
@@ -514,7 +514,7 @@ class MirrorLeechListener:
                                     title=f"{config_dict['TITLE_NAME']} Source Link",
                                     content=mesg,
                                 )["path"]
-                                buttons.buildbutton(f"🔗 Source Link", f"https://telegra.ph/{link}")
+                                buttons.buildbutton(f"ꜱᴏᴜʀᴄᴇ ʟɪɴᴋ 🔗", f"https://telegra.ph/{link}")
                             elif is_url(mesg):
                                 source_link = mesg
                                 if source_link.startswith(("|", "pswd: ", "c:")):
