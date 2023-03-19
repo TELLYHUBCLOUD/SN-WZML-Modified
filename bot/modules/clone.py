@@ -281,12 +281,12 @@ def start_clone(listelem):
                         if config_dict['EMOJI_THEME']:
                             msg = f"<b>🗂️ Name: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n"
                         else:
-                            msg = f"<b>Name: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n"
-                        botpm = f"\n<b>Hey {tag}. I have sent your cloned links in PM.</b>\n"
+                            msg = f"<b>ɴᴀᴍᴇ: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n"
+                        botpm = f"\n<b>ʜᴇʏ {tag}. ɪ ʜᴀᴠᴇ ꜱᴇɴᴛ ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʟɪɴᴋꜱ ɪɴ ᴘᴍ.</b>\n"
                         buttons = ButtonMaker()
                         b_uname = bot.get_me().username
                         botstart = f"http://t.me/{b_uname}"
-                        buttons.buildbutton("View links in PM", f"{botstart}")
+                        buttons.buildbutton("ᴠɪᴇᴡ ʟɪɴᴋꜱ ɪɴ ᴘᴍ", f"{botstart}")
                         if config_dict['PICS']:
                             sendPhoto(msg + botpm, bot, message, rchoice(config_dict['PICS']), buttons.build_menu(2))
                         else:
@@ -295,7 +295,7 @@ def start_clone(listelem):
                         if config_dict['EMOJI_THEME']:
                             cc = f'\n<b>👤 Clone By: </b>{tag}\n\n'
                         else:
-                            cc = f'\n<b>Clone By: </b>{tag}\n\n'
+                            cc = f'\n<b>ᴄʟᴏɴᴇ ʙʏ: </b>{tag}\n\n'
                         if config_dict['PICS']:
                             sendPhoto(result + cc, bot, message, rchoice(config_dict['PICS']), button)
                         else:
@@ -360,7 +360,7 @@ def start_clone(listelem):
         if config_dict['EMOJI_THEME']:
             logwarn = f"<b>📩 I have sent files in Mirror Log Channel. Join <a href=\"{config_dict['MIRROR_LOG_URL']}\">Mirror Log channel</a> </b>\n"
         else:
-            logwarn = f"<b>I have sent files in Mirror Log Channel. Join <a href=\"{config_dict['MIRROR_LOG_URL']}\">Mirror Log channel</a> </b>\n"
+            logwarn = f"<b>ɪ ʜᴀᴠᴇ ꜱᴇɴᴛ ꜰɪʟᴇꜱ ɪɴ ᴍɪʀʀᴏʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ. ᴊᴏɪɴ <a href=\"{config_dict['MIRROR_LOG_URL']}\">ᴍɪʀʀᴏʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ</a> </b>\n"
     else:
         logwarn = ''
 
@@ -375,7 +375,7 @@ def start_clone(listelem):
             if config_dict['EMOJI_THEME']:
                 warnmsg = f'<b>❗ This message will be deleted in <i>{auto_delete_message} minutes</i> from this group.</b>\n'
             else:
-                warnmsg = f'<b>This message will be deleted in <i>{auto_delete_message} minutes</i> from this group.</b>\n'
+                warnmsg = f'<b>ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <i>{auto_delete_message} ᴍɪɴᴜᴛᴇꜱ</i> ꜰʀᴏᴍ ᴛʜɪꜱ ɢʀᴏᴜᴘ.</b>\n'
     else:
         warnmsg = ''
 
