@@ -256,7 +256,7 @@ def get_readable_message():
                 globals()['PAGE_NO'] -= 1
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
             if config_dict['SAFE_MODE']:
-                msg += f"<b>{download.status()}: <a href='https://github.com/SN-ABDULLAH-AL-NOMAN/SN-MLTB'>SN-MLTB</a> Safe Mode</b>"
+                msg += f"<b>{download.status()}: <a href='https://t.me/shadow_mirror19'>Shadow Mirror</a> Safe Mode</b>"
             else:
                 msg += f"<b>ꜰɪʟᴇɴᴀᴍᴇ : </b> <code>{escape(str(download.name()))}</code>"
             if download.status() not in [MirrorStatus.STATUS_SEEDING, MirrorStatus.STATUS_SPLITTING, MirrorStatus.STATUS_CONVERTING, MirrorStatus.STATUS_QUEUEDL, MirrorStatus.STATUS_QUEUEUP]:
