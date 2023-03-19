@@ -437,7 +437,7 @@ class GoogleDriveHelper:
             if config_dict['BUTTON_SIX_NAME'] != '' and config_dict['BUTTON_SIX_URL'] != '':
                 buttons.buildbutton(f"{config_dict['BUTTON_SIX_NAME']}", f"{config_dict['BUTTON_SIX_URL']}")
             if config_dict['SOURCE_LINK']:
-                buttons.buildbutton(f"🔗 Source Link", link)
+                buttons.buildbutton(f"ꜱᴏᴜʀᴄᴇ ʟɪɴᴋ 🔗", link)
         except Exception as err:
             if isinstance(err, RetryError):
                 LOGGER.info(f"Total Attempts: {err.last_attempt.attempt_number}")
